@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    gap: 50px;
+}
+
+header .header-menu ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header-menu ul .menu-item a {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header-menu ul .menu-item a:hover{
+    color: #ff0000;
+}
+.header-menu ul .menu-item a:hover::after{
+    content: "";
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-color: #ff0000;
+}
+
+.header-menu ul .sub-menu{
+    position: absolute;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+.header-menu ul .menu-item:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+}

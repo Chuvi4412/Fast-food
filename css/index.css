@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    transition: 500ms all;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    line-height: 20px;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 96px;
+    /* color: white; */
+    color: #262626;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    color: #262626;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 47px;
+    color: white;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 25px;
+    color: #262626;
+}
+
+p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #333;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    h2 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 41px;
+    }
+
+    h4 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
