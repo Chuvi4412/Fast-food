@@ -33,8 +33,86 @@ header .header-menu ul {
     display: block;
     opacity: 0;
     visibility: hidden;
+    background-color: white;
+    width: 220px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
 }
 .header-menu ul .menu-item:hover .sub-menu{
     opacity: 1;
     visibility: visible;
+
 }
+.header-menu .menu-item .sub-menu-item a{
+    color: #333;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 1em 1.5em;
+    line-height: 25px;
+    display: block;
+    position: relative;
+}
+.header-menu .menu-item .sub-menu-item{
+    position: relative;
+}
+.header-menu .menu-item .sub-menu-item a::after, .header-menu .menu-item .sub-menu-item a:hover::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 1.5em;
+    right: 1.5em;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0,0,0,.15);
+}
+.header-menu .menu-item .sub-menu .sub-menu-2{
+    position: absolute;
+    background-color: white;
+    right: -220px;
+    display: block;
+    width: 220px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+    top: 0%;
+    opacity: 0;
+    visibility: hidden;
+}
+.header-menu .menu-item .sub-menu .sub-menu-item:hover .sub-menu-2{
+    opacity: 1;
+    visibility: visible;
+}
+.header-menu-trigger{
+    height: 60px;
+    margin-right: -2em;
+    display: none;
+}
+.header-menu-trigger div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 3px;
+    cursor: pointer;
+}
+.header-menu-trigger div span{
+    display: block;
+    background: white;
+    height: 3px;
+    width: 19px;
+    border-radius: 3px;
+}
+.header-menu-trigger div:hover span{
+    background-color: #ff0000;
+}
+@media screen and (max-width: 1024px){
+    .header-menu{
+        display:none
+    }
+    .header-logo a img{
+        width: 60px;
+    }
+    .header-menu-trigger{
+        display: block;
+    }
+}
+
+
