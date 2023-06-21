@@ -1,0 +1,33 @@
+.principal-baner {
+    background-image: url(../../img/background-burgers-home-top.jpg);
+    width: 100%;
+    padding: 15em 0 9em 0;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal-baner h4 {
+    font-size: 21px;
+    line-height: 37px;
+    background-color: red;
+    padding: 0 10px;
+    color: white;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-bottom: .6em;
+
+}
+
+.principal-baner h1 {
+    color: white;
+    margin-bottom: .5em;
+}
+
+@media screen and (max-width:1200px) {
+    .principal-baner h4 {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+}
