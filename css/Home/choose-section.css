@@ -1,0 +1,63 @@
+.cards-container-choose SPAN {
+    letter-spacing: 0;
+    font-weight: 800;
+    background-color: #ff0000;
+    color: white;
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 6em;
+    margin-bottom: .8em;
+}
+
+.cards-container-choose h1 {
+    font-size: 42px;
+    line-height: 42px;
+    color: #262626;
+    text-align: center;
+}
+
+.cards-container-choose-border {
+    border: 3em solid #f6f8fa;
+}
+
+.cards-container-choose p {
+    text-align: center;
+    margin-top: .4em;
+    margin-bottom: .5em;
+}
+
+.cards-container-choose .burgers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3em 80px;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.cards-container-choose .burgers-item h4 {
+    margin-top: 1em;
+}
+
+.cards-container-choose .burgers-item p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+}
+
+.cards-container-choose .burgers-item:last-child {
+    grid-column: 1/4;
+}
+
+@media screen and (max-width:992px) {
+    .cards-container-choose .burgers {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-container-choose .burgers-item:last-child {
+        grid-column:auto;
+    }
+
+}
