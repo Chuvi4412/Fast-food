@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "icon7stroke";
+    font-weight: normal;
+    font-style: normal;
+    src: url(../Assets/fonts/Pe-icon-7-stroke.woff) format(woff)
+
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url(../Assets/fonts/fontawesome-webfont.woff2) format(woff2);
+    font-weight: normal;
+    font-style: normal;
+    }
