@@ -94,7 +94,25 @@ p {
     background-color: #ff0000;
     color: white;
 }
-
+.button-white{
+    border-color: white;
+}
+.button-white:hover {
+    background-color: white;
+    color: #262626;
+}
+.tag{
+    background-color: #ff0000;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    margin-bottom: .4em;
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    width: fit-content;
+    font-weight: 800;
+}
 @media screen and (max-width: 1199px) {
     h1 {
         font-size: 56px;
@@ -125,4 +143,5 @@ p {
         padding: 0 30px;
     }
 }
+
 

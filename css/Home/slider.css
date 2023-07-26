@@ -1,0 +1,55 @@
+.cards-slider{
+    padding: 6em 0;
+
+}
+.cards-slider .slider-item{
+    display: flex;
+
+}
+.slider-item .slider-img, .slider-item .slider-description{
+    width: 50%;
+
+}
+.slider-img img{
+    width: calc(100% - 80px);
+    padding: 0px 40px;
+}
+.slider-description p{
+    color: #333;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: .4em;
+    margin-bottom: 3em;
+    opacity: .6;
+
+}
+.cards-slider .slick-prev{
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 0;
+    height: 80px;
+    width: 80px;
+}
+.cards-slider .slick-prev::before{
+    content: "";
+    background-image: url(../../img/icons/Chevron.svg);
+    background-size: cover;
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+@media screen and (max-width: 767px) {
+    .cards-slider .slider-item{
+        display: block;
+        padding-bottom: 2em;
+    
+    }
+    .slider-item .slider-img, .slider-item .slider-description{
+        width: 100%;
+    
+    }
+
+
+    
+}
