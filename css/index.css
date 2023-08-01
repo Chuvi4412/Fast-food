@@ -96,6 +96,7 @@ p {
 }
 .button-white{
     border-color: white;
+    background: transparent;
 }
 .button-white:hover {
     background-color: white;

@@ -1,0 +1,73 @@
+.cards-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+.card-menu-item{
+    position: relative;
+    background-image: url(../../img/home/cards-menu-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 96px 0;
+}
+.card-menu-item:nth-child(2n) .card-menu-text{
+    margin-right: auto;
+    margin-left: 0;
+
+}
+.card-menu-item-2{
+    background-image: url(../../img/home/cell-background-burger-right-2.jpg);
+}
+.card-menu-item-3{
+    background-image: url(../../img/home/cell-background-burger-left-3.jpg);
+}
+.card-menu-item-4{
+    background-image: url(../../img/home/cell-background-burger-right-4.jpg);
+}
+.card-menu-item-5{
+    background-image: url(../../img/home/cell-background-burger-left-5.jpg);
+}
+.card-menu-item-6{
+    background-image: url(../../img/home/cell-background-burger-right-6.jpg);
+}
+.card-menu-text{
+    max-width: 500px;
+    width: 100%;
+    padding: 0 60px;
+    margin-left: auto;
+}
+.card-menu-text h2{
+    color: white;
+    margin: .4em 0;
+}
+.card-menu-text p{
+    color: white;
+    opacity: .6;
+    margin-bottom: 1.5em;
+}
+.card-menu-text .button{
+    margin-top: 2em;
+    display: block;
+    width: fit-content;
+}
+@media screen and (max-width: 767px) {
+    .cards-menu{
+        grid-template-columns: 1fr;
+    }
+    .card-menu-item:nth-child(2n) .card-menu-text{
+        margin-right: 0;
+        margin-left: auto;
+    
+    }
+    
+}
+@media screen and (max-width: 620px) {
+    .card-menu-text{
+        padding: 0 1em;
+        width: calc(100% - 2em);
+
+    
+    }
+    
+}

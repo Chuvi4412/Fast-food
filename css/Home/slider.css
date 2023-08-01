@@ -1,5 +1,6 @@
 .cards-slider{
     padding: 6em 0;
+    position: relative;
 
 }
 .cards-slider .slider-item{
@@ -23,21 +24,37 @@
     opacity: .6;
 
 }
-.cards-slider .slick-prev{
+.cards-slider .slick-prev, .cards-slider .slick-next{
     background: transparent;
     border: 0;
     outline: none;
     font-size: 0;
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
-.cards-slider .slick-prev::before{
+.cards-slider .slick-next{
+    right: 0;
+}
+
+.cards-slider .slick-prev::before,.cards-slider .slick-next::before{
     content: "";
     background-image: url(../../img/icons/Chevron.svg);
-    background-size: cover;
+    background-size: 70px;
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.cards-slider .slick-next::before{
+    transform: rotate(0deg);
 }
 @media screen and (max-width: 767px) {
     .cards-slider .slider-item{
@@ -50,6 +67,18 @@
     
     }
 
-
+    .cards-slider .slick-prev, .cards-slider .slick-next{
+        height: 80px;
+        width: 80px;
+        top: 30%;
+        transform: translateY(0);
+    
+    }
+    
+    .cards-slider .slick-prev::before,.cards-slider .slick-next::before{
+        background-size: 50px;
+        width: 80px;
+        height: 80px;
+    }
     
 }
